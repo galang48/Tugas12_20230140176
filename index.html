@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Pendaftaran Peminatan</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Pendaftaran Peminatan</h2>
+            <p>Silakan isi formulir berikut dengan data yang valid</p>
+        </div>
+        
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan nama lengkap" id="nama" class="form-input">
+            </div>
+            
+            <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="text" placeholder="Masukkan NIM" id="nim" class="form-input">
+            </div>
+            
+            <div class="form-group">
+                <p class="radio-group-label">Peminatan pada bidang:</p>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="peminatan" value="programming">
+                        <span class="radio-custom"></span>
+                        Programming
+                    </label>
+                    
+                    <label class="radio-option">
+                        <input type="radio" name="peminatan" value="desain">
+                        <span class="radio-custom"></span>
+                        Desain
+                    </label>
+                    
+                    <label class="radio-option">
+                        <input type="radio" name="peminatan" value="jaringan">
+                        <span class="radio-custom"></span>
+                        Jaringan
+                    </label>
+                    
+                    <label class="radio-option">
+                        <input type="radio" name="peminatan" value="data">
+                        <span class="radio-custom"></span>
+                        Data
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea placeholder="Tulis alamat lengkap" name="alamat" id="alamat" class="form-input textarea-input"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="angkatan">Angkatan</label>
+                    <select name="angkatan" id="angkatan" class="form-input">
+                        <option value="" disabled selected>Pilih angkatan</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </div>
+                
+                <div class="form-group half-width">
+                    <label for="tanggal">Tanggal Pendaftaran</label>
+                    <input type="date" id="tanggal" class="form-input">
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Daftar Sekarang</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
